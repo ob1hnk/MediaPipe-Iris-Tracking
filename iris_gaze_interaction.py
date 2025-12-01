@@ -372,7 +372,7 @@ def run_feedback_loop(
     max_samples: int,
 ) -> None:
     """타깃을 띄우고 시선을 추적하면서 변환을 꾸준히 보정하는 메인 루프."""
-    transform, loaded_profile = load_initial_transform(profile_path)
+    transform = load_initial_transform(profile_path)
     feedback_points = {
         name: FeedbackPoint(name=name, target=coords) for name, coords in TARGET_POINTS
     }

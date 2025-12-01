@@ -28,8 +28,8 @@ def main(camera_index: int = 0):
     base_timestamp = time.time()
 
     iris_indices = {
-        "left": [468, 469, 470, 471, 472],
-        "right": [473, 474, 475, 476, 477],
+        "left": [468, 469, 470, 471, 472], # 왼쪽 홍채에 해당하는 랜드마크 인덱스
+        "right": [473, 474, 475, 476, 477], # 오른쪽 홍채에 해당하는 랜드마크 인덱스
     }
 
     with FaceLandmarker.create_from_options(options) as landmarker:
